@@ -5,19 +5,20 @@
 <br />
 <div class="container-fluid text-center">
     <div class="row w-50">     
-    <CityList   selectedcitysig="HandleCitySelection"></CityList>               
+    <CityList @ref="cityList"   selectedcitysig="HandleCitySelection"></CityList>               
     </div>   
 </div>
 
 <br />
 <br />
 <ServerComponent @rendermode="InteractiveServer" ></ServerComponent>
-<ServerFilter servers=@servers  filtersignal="HandleFilter"></ServerFilter>
+<ServerFilter @ref="serverFilter" servers=@servers  filtersignal="HandleFilter"></ServerFilter>
 
 <ServerList @rendermode ="InteractiveServer" Cityname ="@selectedcity" filter="@filterName"></ServerList>
 
 @code {
-    
+    private CityList cityList;
+    private ServerFilter serverFilter;
    public string filterName{get;set;}="";
        private  string selectedcity = "";
        private string selectedDivBgColor ="bg-white";
@@ -38,6 +39,7 @@
  public void HandleFilter(string name)
  {
         filterName =name;
+        serverFilter?.clearSelection();
        
 //this.servers = ServersRepository.SearchServers(name);
  }
@@ -46,6 +48,7 @@
     {
     selectedcity=name;
     this.filterName = string.Empty;
+    cityList?.clearSelection();
    
 
     }

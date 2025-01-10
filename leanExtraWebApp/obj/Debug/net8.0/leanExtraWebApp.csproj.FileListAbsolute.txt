@@ -30,3 +30,4 @@ C:\Users\r.razmal\source\repos\leanExtraWebApp\leanExtraWebApp\obj\Debug\net8.0\
 C:\Users\r.razmal\source\repos\leanExtraWebApp\leanExtraWebApp\bin\Debug\net8.0\leanExtraWebApp.staticwebassets.endpoints.json
 C:\Users\r.razmal\source\repos\leanExtraWebApp\leanExtraWebApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\r.razmal\source\repos\leanExtraWebApp\leanExtraWebApp\obj\Debug\net8.0\staticwebassets\msbuild.leanExtraWebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\r.razmal\source\repos\leanExtraWebApp\leanExtraWebApp\obj\Debug\net8.0\leanExtraWebApp.sourcelink.json

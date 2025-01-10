@@ -25,4 +25,8 @@
         else {servers   = ServersRepository.SearchServers(this.filter);}
         
     }
+    public void clearSelection()
+    {
+    this.filter = string.Empty;
+    }
 }

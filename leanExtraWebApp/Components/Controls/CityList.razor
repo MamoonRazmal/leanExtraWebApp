@@ -12,7 +12,6 @@
      [Parameter]
            public EventCallback<string> selectedcitysig{get;set;} 
    
- 
      public string? selectedcity="Toronto";
      
      public string? city{get;set;}
@@ -22,6 +21,11 @@
         selectedcity=name;
         selectedcitysig.InvokeAsync(name);
      }
+     
+    public void clearSelection()
+    {
+    this.selectedcity = string.Empty;
+    }
 
      
 }
