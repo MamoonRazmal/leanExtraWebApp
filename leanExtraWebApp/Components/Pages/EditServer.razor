@@ -1,0 +1,14 @@
+﻿@page "/edit"
+<h3>EditServer</h3>
+<br />
+@id
+@code {
+    //"/server/{id:int}"
+   
+    protected override void OnParametersSet()
+    {
+         [Parameter]
+    public int ? id  { get;set; }
+        Console.WriteLine($"Id: {Id}");
+    }
+}

@@ -1,0 +1,98 @@
+<EditForm Enhance="true"  Model="server"FormName="serverComponentForm" onsubmit="ChangeServerStatus">
+    <InputNumber @bind-Value="server.ServerId" hidden></InputNumber>
+    <InputText @bind-Value= "server.Name" hidden></InputText>
+     <InputText @bind-Value= "server.City" hidden></InputText>
+     <InputCheckbox @bind-Value="server.IsOnline" hidden></InputCheckbox>
+     </EditForm>
+       [SupplyParameterFromForm]
+        private Server? server {get;set;}// new Server { Name = "Server1", City = "Toronto" };
+   protected override void OnParametersSet()
+   {
+    server ??= new Server{ Name = "Server1", City = "Toronto" };
+   }
+   private void ChangeServerStatus()
+   {
+    if(server is not null)
+    {
+        server.IsOnline = !server.IsOnline;
+    }
+   }
+
+}
+
+@page "/server"
+@rendermode InteractiveServer
+<h3>Servers</h3>
+<br />
+<br />
+<div class="container-fluid text-center">
+    <div class="row w-50">
+
+        @foreach (var city in cityname)
+                {
+                    <div class="col @(city == selectedcity ? selectedDivBgColor : "")" id="@city">
+                 
+                <img src=@($"/images/{city}.png")/>
+                 <button class="btn btn-primary" @onclick="@(()=>selectcity(city))">@city</button>                       
+                     </div>
+                }                   
+    </div>   
+</div>
+@serverfilter
+<br />
+<br />
+<ServerComponent @rendermode="InteractiveServer"></ServerComponent>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Seatch server" @onchange ="HandleServerChange"/>
+    <button class="btn btn-outline-secondary" type="button" id="button-search" @onclick="HandleSearch">Search</button>
+</div>
+<ul>
+    @foreach(var server in servers)
+    {
+        <li>@server.Name in @server.City is <span style="color:@(server.IsOnline ?"green":"red")">@(server.IsOnline ? "Online" : "Offline")</span>
+         <a href="/server/@server.ServerId" class="btn btn-link">  Edit
+        </a>
+        <EditForm Model="server" FormName="@($"form-server{server.ServerId}" )" OnValidSubmit="@(()=>{delete(server.ServerId);})">
+            <button class="btn btn-danger" type="submit">Delete</button>
+        </EditForm>
+        </li>
+    }
+
+</ul>
+
+@code {
+    private string serverfilter ="";
+       private  string selectedcity = "Toronto";
+       private string selectedDivBgColor ="bg-white";
+    //@server.ServerId
+    private List<Server> servers = ServersRepository.GetServerByCity("Toronto");
+    private List<string> cityname = CitiesRepository.GetCities();
+    private List<string> citypic = CitiesRepository.GetCitesiPic(); 
+     
+    private void delete(int serverId)
+    {
+        if(serverId>0)
+        {
+            ServersRepository.DeleteServer(serverId);
+        }
+       
+    }  
+    private void selectcity(string name)
+    {
+        this.selectedcity =name;
+        this.servers = ServersRepository.GetServerByCity(this.selectedcity);
+        this.selectedDivBgColor = "bg-light";
+
+    }  
+    private void HandleServerChange(ChangeEventArgs args)
+    {
+        serverfilter = args.Value?.ToString() ?? string.Empty;
+    }
+    private void HandleSearch()
+    {
+        this.servers = ServersRepository.SearchServers(serverfilter);
+        this.selectedcity =string.Empty;
+
+    }
+
+}

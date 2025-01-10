@@ -1,0 +1,27 @@
+
+
+   @foreach (var city in cityname)
+    {
+    <CityCompo city=@city selectedcity=@selectedcity selectedcitysig="HandleCitySelection"></CityCompo>
+   
+    }
+@code
+{
+     private List<string> cityname = CitiesRepository.GetCities();
+     
+     [Parameter]
+           public EventCallback<string> selectedcitysig{get;set;} 
+   
+ 
+     public string? selectedcity="Toronto";
+     
+     public string? city{get;set;}
+
+     public void HandleCitySelection(string name)
+     {
+        selectedcity=name;
+        selectedcitysig.InvokeAsync(name);
+     }
+
+     
+}

@@ -1,0 +1,62 @@
+@page "/task"
+@rendermode InteractiveServer
+<button class="btn btn-primary" @onclick="addtask">Add Task</button>
+
+<ul>
+@foreach(var task in myworkList)
+{
+    <li> 
+        <InputNumber @bind-Value=task.taskId hidden></InputNumber>
+        <InputCheckbox Value="@task.TaskFinished" ValueChanged="value=>taskFinish(task)" ValueExpression="@(()=>task.TaskFinished)"></InputCheckbox>
+       
+      
+       @if(task.TaskFinished==true)
+       {
+         <InputText class=" form-control border-0  m-1 text text-decoration-line-through" Value="@task.taskName" ValueChanged="value => saveTask(task, value)"  ValueExpression="@(() => task.taskName)" readonly/>
+        <text> task is CompletedAt @task.CompletedAt</text>
+       }
+       else
+       {
+          <InputText class=" form-control border-0" Value="@task.taskName" ValueChanged="value => saveTask(task, value)" ValueExpression="@(() => task.taskName)" />
+       }
+        </li>
+}
+
+</ul>
+
+@code
+{
+    
+    private int workid=0;
+    private string _workList ="Task";
+    
+private List<DoTask> myworkList = TaskListrepo.getAllTask() ?? new List<DoTask>();
+ private void addtask()
+ {
+    TaskListrepo.addTask();
+    myworkList = TaskListrepo.getAllTask();
+ }   
+ private void getTaskName(DoTask job,ChangeEventArgs args)
+ {
+    job.taskName=args.Value?.ToString() ?? string.Empty;
+TaskListrepo.EditTask(job.taskId,job.taskName);
+ }
+
+private void saveTask(DoTask task,string taskname)
+{
+    
+    if(task is not null)
+    { TaskListrepo.EditTask(task.taskId,taskname);   }
+   
+}
+private void taskFinish(DoTask task)
+{
+if(task is not null)
+{
+    string date =DateTime.Today.ToString();
+    TaskListrepo.FinishTask(task.taskId,true,date);
+   // DateTime DateTime.Now { get; }
+}
+}
+
+}

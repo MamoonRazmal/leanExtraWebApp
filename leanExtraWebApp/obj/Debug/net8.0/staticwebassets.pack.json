@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\leanExtraWebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\leanExtraWebApp.agnx0o2wqm.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\wwwroot\\images\\Calgary.png",
+      "PackagePath": "staticwebassets\\images\\Calgary.png"
+    },
+    {
+      "Id": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\wwwroot\\images\\Halifax.png",
+      "PackagePath": "staticwebassets\\images\\Halifax.png"
+    },
+    {
+      "Id": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\wwwroot\\images\\Ottawa.png",
+      "PackagePath": "staticwebassets\\images\\Ottawa.png"
+    },
+    {
+      "Id": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\wwwroot\\images\\montreal.png",
+      "PackagePath": "staticwebassets\\images\\montreal.png"
+    },
+    {
+      "Id": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\wwwroot\\images\\toronto.png",
+      "PackagePath": "staticwebassets\\images\\toronto.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.leanExtraWebApp.props",
+      "PackagePath": "build\\leanExtraWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.leanExtraWebApp.props",
+      "PackagePath": "buildMultiTargeting\\leanExtraWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.leanExtraWebApp.props",
+      "PackagePath": "buildTransitive\\leanExtraWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.leanExtraWebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.leanExtraWebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

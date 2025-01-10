@@ -1,0 +1,29 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Seatch server" @bind-value="serverfilter" @bind-value:event=oninput/>
+    <button class="btn btn-outline-secondary" type="button" id="button-search" @onclick="@(()=>HandleSearch(serverfilter))">Search</button>
+</div>
+@serverfilter
+@code
+{
+    [Parameter]
+    public List<Server>? servers{get;set;}
+    private string _serverfilter ="";
+    private string serverfilter{get=>_serverfilter;
+    set{
+
+        _serverfilter = value;
+         this.servers = ServersRepository.SearchServers(_serverfilter);
+    }} 
+
+   
+    [Parameter]
+    public EventCallback<string> filtersignal{get;set;}
+         private void HandleSearch(string filter)
+        {
+            filtersignal.InvokeAsync(filter);
+      //  this.servers = ServersRepository.SearchServers(serverfilter);
+        //this.selectedcity =string.Empty;
+
+
+         }
+}

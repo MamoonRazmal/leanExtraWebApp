@@ -1,0 +1,27 @@
+ <div class="col @(city == selectedcity ? selectedDivBgColor : "")" id="@city">
+    <img src=@($"/images/{city}.png")/>
+    <button class="btn btn-primary" @onclick="@(()=>selectcity(city))">@city</button>                       
+    </div>
+
+    @code
+    {
+          private List<Server> servers = ServersRepository.GetServerByCity("Toronto");
+        [Parameter]
+         public string? city{get;set;}
+            [Parameter]
+          public string? selectedcity{get;set;}
+           private string selectedDivBgColor ="bg-white";
+           [Parameter]
+           public EventCallback<string> selectedcitysig{get;set;} 
+
+           private void selectcity(string name)
+            {
+           selectedcitysig.InvokeAsync(name);
+       
+
+        }
+        /* this.selectedcity =name;
+            this.servers = ServersRepository.GetServerByCity(this.selectedcity);
+            this.selectedDivBgColor = "bg-light";
+            */  
+    }

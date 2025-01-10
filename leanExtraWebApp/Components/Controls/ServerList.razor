@@ -1,0 +1,28 @@
+
+
+@if(this.servers is not null){
+<ul>
+    <Virtualize Items="this.servers" Context="server">
+    <ServerObj @rendermode=InteractiveServer server=server></ServerObj>
+      
+    
+  </Virtualize> 
+
+</ul>
+}
+@code
+{
+    [Parameter]
+    public string? filter{get;set;}
+    [Parameter]
+    public string ? Cityname {get; set;}
+    private List<Server>? servers ;
+         
+    protected override void OnParametersSet()
+    {
+        if(string.IsNullOrWhiteSpace(this.filter))
+        { servers   = ServersRepository.GetServerByCity(Cityname ??"Toronto"); }
+        else {servers   = ServersRepository.SearchServers(this.filter);}
+        
+    }
+}

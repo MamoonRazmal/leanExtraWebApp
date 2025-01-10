@@ -1,0 +1,212 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|c:\\users\\r.razmal\\source\\repos\\leanextrawebapp\\leanextrawebapp\\components\\pages\\editserver.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|solutionrelative:leanextrawebapp\\components\\pages\\editserver.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|c:\\users\\r.razmal\\source\\repos\\leanextrawebapp\\leanextrawebapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|solutionrelative:leanextrawebapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|c:\\users\\r.razmal\\source\\repos\\leanextrawebapp\\leanextrawebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|solutionrelative:leanextrawebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|c:\\users\\r.razmal\\source\\repos\\leanextrawebapp\\leanextrawebapp\\components\\pages\\servers.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|solutionrelative:leanextrawebapp\\components\\pages\\servers.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|c:\\users\\r.razmal\\source\\repos\\leanextrawebapp\\leanextrawebapp\\components\\controls\\servercomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|solutionrelative:leanextrawebapp\\components\\controls\\servercomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|c:\\users\\r.razmal\\source\\repos\\leanextrawebapp\\leanextrawebapp\\models\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|solutionrelative:leanextrawebapp\\models\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|c:\\users\\r.razmal\\source\\repos\\leanextrawebapp\\leanextrawebapp\\models\\serversrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|solutionrelative:leanextrawebapp\\models\\serversrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|c:\\users\\r.razmal\\source\\repos\\leanextrawebapp\\leanextrawebapp\\models\\citiesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|solutionrelative:leanextrawebapp\\models\\citiesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|c:\\users\\r.razmal\\source\\repos\\leanextrawebapp\\leanextrawebapp\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|solutionrelative:leanextrawebapp\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|c:\\users\\r.razmal\\source\\repos\\leanextrawebapp\\leanextrawebapp\\leanextrawebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{81C9ACE5-B322-4A33-BA23-85084FA37F92}|leanExtraWebApp\\leanExtraWebApp.csproj|solutionrelative:leanextrawebapp\\leanextrawebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "leanExtraWebApp\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "leanExtraWebApp\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T07:14:08.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditServer.razor",
+              "DocumentMoniker": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Components\\Pages\\EditServer.razor",
+              "RelativeDocumentMoniker": "leanExtraWebApp\\Components\\Pages\\EditServer.razor",
+              "ToolTip": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Components\\Pages\\EditServer.razor",
+              "RelativeToolTip": "leanExtraWebApp\\Components\\Pages\\EditServer.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T07:06:47.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Models\\City.cs",
+              "RelativeDocumentMoniker": "leanExtraWebApp\\Models\\City.cs",
+              "ToolTip": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Models\\City.cs",
+              "RelativeToolTip": "leanExtraWebApp\\Models\\City.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:22:19.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CitiesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Models\\CitiesRepository.cs",
+              "RelativeDocumentMoniker": "leanExtraWebApp\\Models\\CitiesRepository.cs",
+              "ToolTip": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Models\\CitiesRepository.cs",
+              "RelativeToolTip": "leanExtraWebApp\\Models\\CitiesRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T14:43:00.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServersRepository.cs",
+              "DocumentMoniker": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Models\\ServersRepository.cs",
+              "RelativeDocumentMoniker": "leanExtraWebApp\\Models\\ServersRepository.cs",
+              "ToolTip": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Models\\ServersRepository.cs",
+              "RelativeToolTip": "leanExtraWebApp\\Models\\ServersRepository.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T14:02:23.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Models\\Server.cs",
+              "RelativeDocumentMoniker": "leanExtraWebApp\\Models\\Server.cs",
+              "ToolTip": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Models\\Server.cs",
+              "RelativeToolTip": "leanExtraWebApp\\Models\\Server.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T13:43:02.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "leanExtraWebApp.csproj",
+              "DocumentMoniker": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\leanExtraWebApp.csproj",
+              "RelativeDocumentMoniker": "leanExtraWebApp\\leanExtraWebApp.csproj",
+              "ToolTip": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\leanExtraWebApp.csproj",
+              "RelativeToolTip": "leanExtraWebApp\\leanExtraWebApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-07T13:42:24.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "leanExtraWebApp\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Components\\_Imports.razor",
+              "RelativeToolTip": "leanExtraWebApp\\Components\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T13:37:10.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Servers.razor",
+              "DocumentMoniker": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Components\\Pages\\Servers.razor",
+              "RelativeDocumentMoniker": "leanExtraWebApp\\Components\\Pages\\Servers.razor",
+              "ToolTip": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Components\\Pages\\Servers.razor",
+              "RelativeToolTip": "leanExtraWebApp\\Components\\Pages\\Servers.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T13:34:04.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServerComponent.razor",
+              "DocumentMoniker": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Components\\Controls\\ServerComponent.razor",
+              "RelativeDocumentMoniker": "leanExtraWebApp\\Components\\Controls\\ServerComponent.razor",
+              "ToolTip": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\Components\\Controls\\ServerComponent.razor",
+              "RelativeToolTip": "leanExtraWebApp\\Components\\Controls\\ServerComponent.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-07T13:33:38.752Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
