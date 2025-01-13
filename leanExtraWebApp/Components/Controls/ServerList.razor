@@ -1,7 +1,8 @@
 
-
+@using leanExtraWebApp.StateStore
+@inject SessionStorage sessionStorage
 @if(this.servers is not null){
-<ul>
+<ul class="list-unstyled">
     <Virtualize Items="this.servers" Context="server">
     <ServerObj @rendermode=InteractiveServer server=server></ServerObj>
       
@@ -9,19 +10,28 @@
   </Virtualize> 
 
 </ul>
+<button @onclick ="go">save in Memory</button>
 }
 @code
 {
+    public  Server makeserver = new Server{ServerId =12,IsOnline=true,Name="server12",City="Toronto"};
     [Parameter]
     public string? filter{get;set;}
     [Parameter]
     public string ? Cityname {get; set;}
     private List<Server>? servers ;
-         
+      public async Task go()
+     {
+      await	sessionStorage.SetServerAsync(makeserver);
+   
+     }
     protected override void OnParametersSet()
     {
         if(string.IsNullOrWhiteSpace(this.filter))
-        { servers   = ServersRepository.GetServerByCity(Cityname ??"Toronto"); }
+        { servers   = ServersRepository.GetServerByCity(Cityname ??"Toronto"); 
+      
+        }
+
         else {servers   = ServersRepository.SearchServers(this.filter);}
         
     }
