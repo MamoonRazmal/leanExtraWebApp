@@ -13,14 +13,14 @@
 <br />
 <ServerComponent @rendermode="InteractiveServer"></ServerComponent>
 <ServerFilter @ref="serverFilter" servers=@servers filtersignal="HandleFilter"></ServerFilter>
-
+<CascadingValue Name="SelectedCity" Value="@selectedcity">
 <ServerList @rendermode="InteractiveServer" Cityname="@selectedcity" filter="@filterName"></ServerList>
-
+</CascadingValue>
 @code {
-    private CityList cityList;
-    private ServerFilter serverFilter;
+    private CityList? cityList;
+    private ServerFilter? serverFilter;
     public string filterName { get; set; } = "";
-    private string selectedcity = "";
+    private string selectedcity = "Toronto";
     private string selectedDivBgColor = "bg-white";
     //@server.ServerId
     private List<Server> servers = ServersRepository.GetServerByCity("Toronto");
@@ -52,16 +52,7 @@
 
 
     }
-     protected override void OnAfterRender(bool firstRender)
-   {
-      if(firstRender)
-      {
-         if(NavigationManager.Uri.Contains("backfrom")&& !string.IsNullOrWhiteSpace(CityName))
-         {
-            selectedCity =CityName;
-            StateHasChanged();
-         }
-      }
-   }
+    
+   
 
 }

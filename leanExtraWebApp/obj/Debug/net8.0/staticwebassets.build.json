@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uP+LqclK3mADST93ZdoezuU2IH2rXAXsoC6rh4gSjho=",
+  "Hash": "XP5HggmtbLtUzSH9lNcD10s9Ym3Y7QyL8PP34tsyfW4=",
   "Source": "leanExtraWebApp",
   "BasePath": "_content/leanExtraWebApp",
   "Mode": "Default",
@@ -17,6 +17,48 @@
   ],
   "Assets": [
     {
+      "Identity": "C:\\Users\\r.razmal\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\r.razmal\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
+      "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "25o87uqmvr",
+      "Integrity": "Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\r.razmal\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\r.razmal\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\QuickGrid.razor.js",
+      "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\r.razmal\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
+      "RelativePath": "QuickGrid.razor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eu7w3d5g1a",
+      "Integrity": "tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\r.razmal\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\QuickGrid.razor.js"
+    },
+    {
       "Identity": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\leanExtraWebApp.styles.css",
       "SourceId": "leanExtraWebApp",
       "SourceType": "Computed",
@@ -31,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "agnx0o2wqm",
-      "Integrity": "+nRPfCmTudQaOXmomOQupmr90qYAycC2IHXukRh9wNM=",
+      "Fingerprint": "1yg664b3ja",
+      "Integrity": "SWGUypnLvJUVUdes5NZNlMLNKrQCPMn0cXJmD6BHLSk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\leanExtraWebApp.styles.css"
@@ -249,6 +291,129 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "AssetFile": "C:\\Users\\r.razmal\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Oct 2024 13:29:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "25o87uqmvr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "AssetFile": "C:\\Users\\r.razmal\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Oct 2024 13:29:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js",
+      "AssetFile": "C:\\Users\\r.razmal\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.0\\staticwebassets\\QuickGrid.razor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2563"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Oct 2024 13:06:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
     {
       "Route": "app.css",
       "AssetFile": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\wwwroot\\app.css",
@@ -988,6 +1153,55 @@
       ]
     },
     {
+      "Route": "leanExtraWebApp.1yg664b3ja.styles.css",
+      "AssetFile": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\leanExtraWebApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6046"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SWGUypnLvJUVUdes5NZNlMLNKrQCPMn0cXJmD6BHLSk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 14:12:46 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1yg664b3ja"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SWGUypnLvJUVUdes5NZNlMLNKrQCPMn0cXJmD6BHLSk="
+        },
+        {
+          "Name": "label",
+          "Value": "leanExtraWebApp.styles.css"
+        }
+      ]
+    },
+    {
       "Route": "leanExtraWebApp.agnx0o2wqm.bundle.scp.css",
       "AssetFile": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\leanExtraWebApp.bundle.scp.css",
       "Selectors": [],
@@ -1010,7 +1224,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 07:42:55 GMT"
+          "Value": "Mon, 13 Jan 2025 14:12:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1025,51 +1239,6 @@
         {
           "Name": "label",
           "Value": "leanExtraWebApp.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-+nRPfCmTudQaOXmomOQupmr90qYAycC2IHXukRh9wNM="
-        }
-      ]
-    },
-    {
-      "Route": "leanExtraWebApp.agnx0o2wqm.styles.css",
-      "AssetFile": "C:\\Users\\r.razmal\\source\\repos\\leanExtraWebApp\\leanExtraWebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\leanExtraWebApp.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5913"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+nRPfCmTudQaOXmomOQupmr90qYAycC2IHXukRh9wNM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 07:42:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "agnx0o2wqm"
-        },
-        {
-          "Name": "label",
-          "Value": "leanExtraWebApp.styles.css"
         },
         {
           "Name": "integrity",
@@ -1100,7 +1269,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 07:42:55 GMT"
+          "Value": "Mon, 13 Jan 2025 14:12:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1124,8 +1293,12 @@
           "Value": "bytes"
         },
         {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
           "Name": "Content-Length",
-          "Value": "5913"
+          "Value": "6046"
         },
         {
           "Name": "Content-Type",
@@ -1133,21 +1306,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+nRPfCmTudQaOXmomOQupmr90qYAycC2IHXukRh9wNM=\""
+          "Value": "\"SWGUypnLvJUVUdes5NZNlMLNKrQCPMn0cXJmD6BHLSk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 07:42:55 GMT"
+          "Value": "Mon, 13 Jan 2025 14:12:46 GMT"
         },
         {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+nRPfCmTudQaOXmomOQupmr90qYAycC2IHXukRh9wNM="
+          "Value": "sha256-SWGUypnLvJUVUdes5NZNlMLNKrQCPMn0cXJmD6BHLSk="
         }
       ]
     }

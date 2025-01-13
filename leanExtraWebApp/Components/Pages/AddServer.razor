@@ -1,6 +1,6 @@
 @page "/addserver"
 @inject NavigationManager NavigationManager
-
+@inject SessionStorage sessionStorage
 
 
 <EditForm Model="server" FormName="formServer" OnvalidSubmit="submit">
@@ -41,11 +41,21 @@
 <a href=" /server" class="btn btn-primary">close</a>
 
 </EditForm>
+<button @onclick="getInfo">get info</button>
+@if(servercopy is not null)
+{
+@servercopy.City <p>got from</p>
+}
 
 }
 @code
 {
-   
+    public Server? servercopy;
+ public async Task getInfo()
+ {
+    this.servercopy = await this.sessionStorage.GetServerAsync();
+
+ }
 [SupplyParameterFromForm]
 public Server server{get;set;} = new Server(){IsOnline = false};
 
