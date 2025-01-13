@@ -10,7 +10,7 @@
   </Virtualize> 
 
 </ul>
-<button @onclick ="go">save in Memory</button>
+<button @onclick ="go">save in Memoies</button>
 }
 @code
 {
@@ -20,9 +20,11 @@
     [Parameter]
     public string ? Cityname {get; set;}
     private List<Server>? servers ;
+
       public async Task go()
      {
       await	sessionStorage.SetServerAsync(makeserver);
+
    
      }
     protected override void OnParametersSet()
