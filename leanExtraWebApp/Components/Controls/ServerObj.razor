@@ -1,34 +1,70 @@
   
   @inject NavigationManager NavigationManager
+
+
   @if(server is not null)
   {
-  <li>@server.Name in @server.City is <span style="color:@(server.IsOnline ?"green":"red")">@(server.IsOnline ? "Online" : "Offline")</span>
+  <li style="background-color: @Getcolor();">@server.Name in @server.City is <span style="color:@(server.IsOnline ?"green":"red")">@(server.IsOnline ? "Online" : "Offline")</span>
          <a href="/server/@server.ServerId" class="btn btn-link">  Edit
         </a>
+        
+@if(server.IsOnline)
+{
+<button type="button" class="btn btn-danger" @onclick="@(()=>{server.IsOnline = false;})">TurnOff</button>
+} 
+else{
+    <button type="button" class="btn btn-outline-success" @onclick="@(()=>{server.IsOnline=true;})">TurnOn</button>
+}
         <EditForm Model="server" FormName="@($"form-server{server.ServerId}" )" OnValidSubmit="@(()=>{delete(server.ServerId);})">
             <button class="btn btn-danger" type="submit">Delete</button>
         </EditForm>
         </li>
+       
 
 }
-        @code
-        {
-             [Parameter]
-            public string ? Cityname {get; set;}
-            [Parameter]
-            public Server? server{get;set;}
-            protected override void OnParametersSet()
-            {
+@code
+{
+[CascadingParameter (Name ="SelectedCity")]
+public string? getCitynamefromCascade{get;set;}
+public string? selectedCity{get;set;}
+  [Parameter]
+public string ? Cityname {get; set;}
+[Parameter]
+public Server? server{get;set;}
+protected override void OnParametersSet()
+{
 
-            }
-              private void delete(int serverId)
-                 {
-                 if(serverId>0)
-                    {
-                    ServersRepository.DeleteServer(serverId);
-                  //  server = ServersRepository.GetServerByCity(Cityname);
-                  NavigationManager.NavigateTo("/server",true);
-                     }
-       
-                }  
+}
+  private void delete(int serverId)
+      {
+      if(serverId>0)
+        {
+        ServersRepository.DeleteServer(serverId);
+      //  server = ServersRepository.GetServerByCity(Cityname);
+      NavigationManager.NavigateTo("/server",true);
           }
+
+    }  
+    public string Getcolor()
+    {
+      if(getCitynamefromCascade is not null)
+      {
+        switch(getCitynamefromCascade)
+        {
+          case "Toronto": return "powderblue";
+          case "Montreal": return "lightgray";
+          case "Ottawa" : return "palegreen";
+          case "Calgary" :return "pink";
+          case "Halifax": return "white";
+          default : return "white";
+        }
+      }
+      else{
+        return "white";
+          }
+    }
+}    using System.Reflection.Metadata.Ecma335;
+
+#line default
+#line hidden
+#nullable disable

@@ -1,10 +1,13 @@
 using leanExtraWebApp.Components;
+using leanExtraWebApp.StateStore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+    builder.Services.AddTransient<SessionStorage>();
+    builder.Services.AddScoped<ContainerStorage>();
 
 var app = builder.Build();
 
