@@ -35,6 +35,11 @@ namespace leanExtraWebApp
             task.taskName = name;
         }
     }
+    public static List<DoTask> SearchTask(string taskName)
+    {
+       
+        return TaskLists.Where(s=>s.taskName.Contains(taskName,StringComparison.OrdinalIgnoreCase)).ToList(); 
+    }
     public static void FinishTask(int id, bool finish,string finishat )
     {
         var task = TaskLists.FirstOrDefault(s=>s.taskId == id);

@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xDaXR5TGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/r.razmal/source/repos/leanExtraWebApp/leanExtraWebApp/Components/Controls/SearchComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xTZWFyY2hDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/r.razmal/source/repos/leanExtraWebApp/leanExtraWebApp/Components/Controls/ServerComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xTZXJ2ZXJDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +50,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/r.razmal/source/repos/leanExtraWebApp/leanExtraWebApp/Components/Controls/ServerObj.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xTZXJ2ZXJPYmoucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/r.razmal/source/repos/leanExtraWebApp/leanExtraWebApp/Components/Controls/TodoComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xUb2RvQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/r.razmal/source/repos/leanExtraWebApp/leanExtraWebApp/Components/Controls/TodoListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xUb2RvTGlzdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/r.razmal/source/repos/leanExtraWebApp/leanExtraWebApp/Components/Pages/AddServer.razor]

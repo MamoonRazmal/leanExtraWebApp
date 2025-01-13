@@ -1,0 +1,18 @@
+@if(FromParentTakeDoTask is not null)
+{
+@foreach(var task in FromParentTakeDoTask)
+{
+    <li> 
+       <TodoComponent getTaskFromParent =task ></TodoComponent>
+        </li>
+}
+}
+@code
+{
+[Parameter]
+public List<DoTask>? FromParentTakeDoTask{get;set;}
+
+
+
+
+}

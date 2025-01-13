@@ -1,0 +1,35 @@
+ <InputNumber @bind-Value=getTaskFromParent.taskId hidden></InputNumber>
+        <InputCheckbox Value="@getTaskFromParent.TaskFinished" ValueChanged="value=>taskFinish(getTaskFromParent)" ValueExpression="@(()=>getTaskFromParent.TaskFinished)"></InputCheckbox>
+       
+      
+       @if(getTaskFromParent.TaskFinished==true)
+       {
+         <InputText class=" form-control border-0  m-1 text text-decoration-line-through" Value="@getTaskFromParent.taskName" ValueChanged="value => saveTask(getTaskFromParent, value)"  ValueExpression="@(() => getTaskFromParent.taskName)" readonly/>
+        <text> task is CompletedAt @getTaskFromParent.CompletedAt</text>
+       }
+       else
+       {
+          <InputText class=" form-control border-0" Value="@getTaskFromParent.taskName" ValueChanged="value => saveTask(getTaskFromParent, value)" ValueExpression="@(() => getTaskFromParent.taskName)" />
+       }
+       @code
+       {
+ [Parameter]
+ public DoTask getTaskFromParent{get;set;}
+ private void taskFinish(DoTask task)
+{
+if(task is not null)
+{
+    string date =DateTime.Today.ToString();
+    TaskListrepo.FinishTask(task.taskId,true,date);
+   // DateTime DateTime.Now { get; }
+}
+}
+
+private void saveTask(DoTask task,string taskname)
+{
+    
+    if(task is not null)
+    { TaskListrepo.EditTask(task.taskId,taskname);   }
+   
+}
+       }

@@ -1,0 +1,12 @@
+<input class="form-control" type="text" @bind-value ="internelSearchState" @bind-value:event=oninput></input>
+<button class="btn btn-primary"  type=button @onclick ="@(()=>HandleSearch(internelSearchState))">Search</button>
+@code{
+    public string? internelSearchState{get;set;}
+    [Parameter]
+    public EventCallback<string> SearchedText{get;set;}
+        public void HandleSearch(string filter)
+    {
+        SearchedText.InvokeAsync(filter);
+        
+    }
+}
