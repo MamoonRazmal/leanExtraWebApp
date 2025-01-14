@@ -1,5 +1,8 @@
 ﻿@page "/server"
 @rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@using leanExtraWebApp.StateStore
+@inject TorontoOnlineStorage torontoOnlineStorage
 <h3>Servers</h3>
 <br />
 <br />
@@ -53,6 +56,20 @@
 
     }
     
-   
+   protected override void OnAfterRender(bool firstRender)
+   {
+    if(firstRender)
+    {
+       // if(NavigationManager.Uri.Contains("backfrom")&& !string.IsNullOrWhiteSpace(selectedcity))
+      //  {
+                //selectedcity = cityname;
+      //  }
+        var servertoronto = ServersRepository.GetServerByCity("Toronto");
+        if(servertoronto is not null)
+        {
+            torontoOnlineStorage.SetNumbersServerOnline(servertoronto.Count(x=>x.IsOnline));
+        }
+    }
+   }
 
 }

@@ -1,10 +1,18 @@
+ @inject TorontoOnlineStorage torontoOnlineStorage
  <div class="col @(city == selectedcity ? selectedDivBgColor : "")" id="@city">
     <img src=@($"/images/{city}.png")/>
-    <button class="btn btn-primary" @onclick="@(()=>selectcity(city))">@city</button>                       
+    <button class="btn btn-primary" @onclick="@(()=>selectcity(city))">@city</button>
+    <div>
+      @if(city.Equals("Toronto",StringComparison.OrdinalIgnoreCase))
+      {
+        @activeServer  
+      }
+    </div>                       
     </div>
 
     @code
-    {
+    { 
+         public int activeServer;
           private List<Server> servers = ServersRepository.GetServerByCity("Toronto");
         [Parameter]
          public string? city{get;set;}
@@ -16,10 +24,22 @@
 
            private void selectcity(string name)
             {
-           selectedcitysig.InvokeAsync(name);
-       
+           selectedcitysig.InvokeAsync(name);                }
+           protected override void OnAfterRender(bool firstRender)
+           {
+            if(firstRender)
+            {
+               activeServer = torontoOnlineStorage.GetNumberServersOnline();
 
-        }
+               torontoOnlineStorage.AddStateChangeListeners(OnServersStatusChange);
+               StateHasChanged();
+            }
+           }
+           public void OnServersStatusChange()
+           {
+               activeServer = torontoOnlineStorage.GetNumberServersOnline();
+                 StateHasChanged();
+           }
         /* this.selectedcity =name;
             this.servers = ServersRepository.GetServerByCity(this.selectedcity);
             this.selectedDivBgColor = "bg-light";

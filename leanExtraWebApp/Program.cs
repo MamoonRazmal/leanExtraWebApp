@@ -8,6 +8,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
     builder.Services.AddTransient<SessionStorage>();
     builder.Services.AddScoped<ContainerStorage>();
+    builder.Services.AddScoped<TorontoOnlineStorage>();
 
 var app = builder.Build();
 

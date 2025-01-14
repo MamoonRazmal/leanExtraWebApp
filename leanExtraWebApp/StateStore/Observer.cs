@@ -19,7 +19,7 @@ public class Oberserver
     }
     public void BroadcastStateChange()
     {
-        _listeners.Invoke();
+        _listeners?.Invoke();
     }
 
 }}
