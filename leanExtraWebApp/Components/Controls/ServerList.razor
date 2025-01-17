@@ -1,6 +1,7 @@
 
 @using leanExtraWebApp.StateStore
 @inject SessionStorage sessionStorage
+@inject IServersEFCoreRepository ServersEFCoreRepository
 @if(this.servers is not null){
 <ul class="list-unstyled">
     <Virtualize Items="this.servers" Context="server">
@@ -30,11 +31,11 @@
     protected override void OnParametersSet()
     {
         if(string.IsNullOrWhiteSpace(this.filter))
-        { servers   = ServersRepository.GetServerByCity(Cityname ??"Toronto"); 
+        { servers   = ServersEFCoreRepository.GetServersByCity(Cityname ??"Toronto");
       
         }
-
-        else {servers   = ServersRepository.SearchServers(this.filter);}
+             
+        else {servers   = ServersEFCoreRepository.Search(this.filter);}
         
     }
     public void clearSelection()

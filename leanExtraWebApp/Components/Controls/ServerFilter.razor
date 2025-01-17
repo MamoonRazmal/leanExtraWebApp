@@ -1,3 +1,4 @@
+@inject IServersEFCoreRepository ServersEFCoreRepository
 <div class="input-group mb-3">
     <input type="text" class="form-control" placeholder="Seatch server" @bind-value="serverfilter" @bind-value:event=oninput/>
     <button class="btn btn-outline-secondary" type="button" id="button-search" @onclick="@(()=>HandleSearch(serverfilter))">Search</button>
@@ -12,7 +13,7 @@
     set{
 
         _serverfilter = value;
-         this.servers = ServersRepository.SearchServers(_serverfilter);
+         this.servers = ServersEFCoreRepository.Search(_serverfilter);
     }} 
 
    
@@ -21,7 +22,7 @@
          private void HandleSearch(string filter)
         {
             filtersignal.InvokeAsync(filter);
-      //  this.servers = ServersRepository.SearchServers(serverfilter);
+      //  this.servers = ServersEFCoreRepository.SearchServers(serverfilter);
         //this.selectedcity =string.Empty;
 
 
