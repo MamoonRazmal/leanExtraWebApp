@@ -1,4 +1,4 @@
-  
+  @inject IServersEFCoreRepository ServersEFCoreRepository
   @inject NavigationManager NavigationManager
   @inject TorontoOnlineStorage torontoOnlineStorage
 
@@ -39,8 +39,8 @@ protected override void OnParametersSet()
       {
       if(serverId>0)
         {
-        ServersRepository.DeleteServer(serverId);
-      //  server = ServersRepository.GetServerByCity(Cityname);
+        ServersEFCoreRepository.DeleteServer(serverId);
+      //  server = ServersEFCoreRepository.GetServerByCity(Cityname);
       NavigationManager.NavigateTo("/server",true);
           }
 

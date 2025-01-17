@@ -1,6 +1,7 @@
 @page "/addserver"
 @inject NavigationManager NavigationManager
 @inject SessionStorage sessionStorage
+@inject IServersEFCoreRepository ServersEFCoreRepository 
 
 
 <EditForm Model="server" FormName="formServer" OnvalidSubmit="submit">
@@ -64,7 +65,7 @@ public void submit()
     
     if(server is not null)
     {
-        ServersRepository.AddServer(server);
+        ServersEFCoreRepository.AddServer(server);
     }
     NavigationManager.NavigateTo("/server");
 
